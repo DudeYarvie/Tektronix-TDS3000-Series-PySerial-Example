@@ -55,7 +55,7 @@ def Config_instr(instr):
     instr.write("TRIGGER:A:LEVEL 1.5"+EOL)          ##Set trigger level
     instr.write("TRIGGER:A:MODE NORMal"+EOL)        ##Sets trigger mode
     instr.write("CH"+act_probe_chs[0]+":POSITION 0.0E+00"+EOL)         ##Places CH at 0 divisons about the display center line
-    instr.write("CH2"+act_probe_chs[1]+":POSITION 2.0E+00"+EOL)        ##Places CH at 2 divisons about the display center line
+    instr.write("CH"+act_probe_chs[1]+":POSITION 2.0E+00"+EOL)        ##Places CH at 2 divisons about the display center line
 
     #Set CH properties
     for probe in act_probe_chs:
